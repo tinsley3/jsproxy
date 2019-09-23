@@ -53,7 +53,7 @@ jsproxy_config({
   /**
    * 默认节点
    */
-  node_default: 'mysite',
+  node_default: 'demo-hk',
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
@@ -87,9 +87,6 @@ jsproxy_config({
   url_handler: {
     'https://www.baidu.com/img/baidu_resultlogo@2.png': {
       replace: 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png'
-    },
-    'https://www.pornhub.com/': {
-      redir: 'https://php.net/'
     },
     'http://haha.com/': {
       content: 'Hello World'
